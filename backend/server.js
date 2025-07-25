@@ -4,7 +4,7 @@ const mongoose = require("mongoose");
 const cors = require("cors");
 
 const userRoutes = require("./routes/userRoutes");
-const projectRoutes = require("./routes/projectRoutes");
+const projectRoutes = require("./routes/care4poorRoutes");
 
 const app = express();
 
@@ -19,10 +19,7 @@ app.use("/api/users", userRoutes);
 app.use("/api/projects", projectRoutes);
 
 mongoose
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("✅ MongoDB connected");
     const PORT = process.env.PORT || 5050;

@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const Project = require("../models/Project");
+const Project = require("../models/Care4Poor");
 const authenticateUser = require("../middleware/auth");
 
 // ✅ Upload project with base64 images
