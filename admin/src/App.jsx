@@ -11,13 +11,13 @@ import {
 import ScrollToTop from "./ScrollToTop";
 
 // Lazy load components
-const AdminLayout = lazy(() => import("./AdminLayouts/AdminLayout"));
-const UploadProject = lazy(() => import("./Pages/Upload"));
-const Projects = lazy(() => import("./Pages/Projects"));
-const AddUser = lazy(() => import("./Pages/AddUser"));
-const Login = lazy(() => import("./Pages/Login"));
-const UserList = lazy(() => import("./Pages/UserList"));
-const ChangePassword = lazy(() => import("./Pages/ChangePassword"));
+const AdminLayout = lazy(() => import("./care4poor/AdminLayouts/AdminLayout"));
+const UploadProject = lazy(() => import("./care4poor/Pages/Upload"));
+const Projects = lazy(() => import("./care4poor/Pages/Projects"));
+const AddUser = lazy(() => import("./care4poor/Pages/AddUser"));
+const Login = lazy(() => import("./care4poor/Pages/Login"));
+const UserList = lazy(() => import("./care4poor/Pages/UserList"));
+const ChangePassword = lazy(() => import("./care4poor/Pages/ChangePassword"));
 
 // Auth protection wrapper
 const RequireAuth = ({ children }) => {
