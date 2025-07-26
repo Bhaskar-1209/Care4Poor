@@ -95,7 +95,7 @@ const Sidebar = () => {
           open ? "translate-x-0" : "-translate-x-full"
         } md:translate-x-0 fixed top-0 left-0 h-full w-64 bg-gray-900 text-white z-40 p-4 transition-transform duration-300`}
       >
-        <h1 className="text-2xl font-bold mb-6">Admin Panel</h1>
+        <h1 className="text-2xl font-bold mb-6">Care$Poor</h1>
         <nav className="flex flex-col gap-2">
           {commonLinks.map((link) => (
             <NavLink
