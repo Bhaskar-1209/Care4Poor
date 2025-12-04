@@ -5,17 +5,20 @@ import AnimatedBackground from "./AnimatedBackground";
 const services = [
   {
     title: "Healthy Foods",
-    desc: "Share stories and experiences from current volunteers to inspire others to join. Allow user to sign up for volunteer opportunities.",
+    desc_1: "Share stories and experiences from current volunteers to inspire others to join. Allow user to sign up for volunteer opportunities.",
+    desc_2: "Share stories and experiences from current volunteers to inspire others to join. Allow user to sign up for volunteer opportunities.",
     icon: "🍳",
   },
   {
     title: "Educations",
-    desc: "Explore our charity website to discover impactful projects, opportunities, and ways to donate, helping those in need thrive.",
+    desc_1: "Explore our charity website to discover impactful projects, opportunities, and ways to donate, helping those in need thrive.",
+    desc_2: "Explore our charity website to discover impactful projects, opportunities, and ways to donate, helping those in need thrive.",
     icon: "🎓",
   },
   {
     title: "Medical Help",
-    desc: "Join us in making a difference! Our charity website connects you with volunteer, donation options, and inspiring stories.",
+    desc_1: "Join us in making a difference! Our charity website connects you with volunteer, donation options, and inspiring stories.",
+    desc_2: "Join us in making a difference! Our charity website connects you with volunteer, donation options, and inspiring stories.",
     icon: "💊",
   },
 ];
@@ -49,10 +52,11 @@ const CharityServices = () => {
               <h4 className="mt-4 font-bold text-xl text-[#3a5f50]">
                 {service.title}
               </h4>
-              <p className="text-gray-600 mt-2 text-sm">{service.desc}</p>
-              <button className="mt-6 bg-[#3a5f50] hover:bg-[#2f4c41] text-white font-medium py-2 px-4 rounded-full inline-flex items-center gap-2 transition duration-300">
+              <p className="text-gray-600 mt-2 text-sm">{service.desc_1}</p>
+              <p className="text-gray-600 mt-2 text-sm">{service.desc_2}</p>
+              {/* <button className="mt-6 bg-[#3a5f50] hover:bg-[#2f4c41] text-white font-medium py-2 px-4 rounded-full inline-flex items-center gap-2 transition duration-300">
                 Learn More <FaArrowRight />
-              </button>
+              </button> */}
             </div>
           ))}
         </div>

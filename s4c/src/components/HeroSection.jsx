@@ -3,11 +3,11 @@ import { motion } from "framer-motion";
 import logo from "../assets/banner/bg_1.png";
 
 const HeroSection = () => (
-  <div className="bg-black text-[#F8E190] p-8">
+  <div className="bg-[#dee5e8] text-[#dde5ea] p-8">
     <div className="w-full">
       {/* Main Container with Golden Border */}
       <motion.div
-        className="border-2 border-[#F8E190] rounded-3xl bg-black backdrop-blur-sm shadow-2xl"
+        className="border-2 border-[#dde5ea] rounded-3xl bg-black backdrop-blur-sm shadow-2xl"
         initial={{ opacity: 0, y: 50, scale: 0.95 }}
         animate={{ opacity: 1, y: 0, scale: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}

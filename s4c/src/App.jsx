@@ -18,7 +18,7 @@ const App = () => {
   return (
     <Router>
       <ScrollToTop /> {/* ✅ ensures scroll resets on route change */}
-      <div className="bg-[#111] min-h-screen text-white relative">
+      <div className="bg-[#dde5ea] min-h-screen text-white relative">
         {/* Navbar fixed on top with absolute positioning */}
         <div className="absolute top-0 left-0 w-full z-50">
           <Navbar />

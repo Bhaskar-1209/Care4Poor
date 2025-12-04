@@ -1,91 +1,81 @@
 import React from "react";
-import { motion } from "framer-motion";
 
-const AboutUs = () => {
+const ImpactStatistics = () => {
   return (
-    <div className="bg-black text-[#F8E190] py-6 px-6">
-      <motion.div
-        className="w-full border-2 border-[#F8E190] rounded-3xl p-12 bg-black backdrop-blur-sm shadow-2xl"
-        initial={{ opacity: 0, scale: 0.98 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 0.8, ease: "easeOut" }}
-        // whileHover={{
-        //   scale: 1.01,
-        //   boxShadow: "0px 8px 30px rgba(248,225,144,0.4)",
-        // }}
-      >
-        {/* Heading */}
-        <motion.h2
-          className="text-4xl font-extrabold text-center mb-8"
-          initial={{ y: -50, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ delay: 0.3, duration: 0.6, type: "spring" }}
-        >
-          About Us
-        </motion.h2>
+    <div className="bg-[#dde5ea] flex items-center justify-center p-10">
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-6">
+        
+        {/* Left Card */}
+        <div className="bg-[#d9e3e7] rounded-3xl shadow-md p-8 relative">
+          {/* Heading */}
+          <h2 className="text-2xl font-extrabold text-gray-900 flex items-center gap-2">
+            Impact <span className="font-semibold">Statistics</span>
+          </h2>
+          <p className="text-sm text-gray-600 mt-2">
+            Growing every year—with your support, the impact multiplies.
+          </p>
 
-        {/* Paragraphs */}
-        <motion.div
-          className="gap-8 text-base leading-relaxed"
-          initial="hidden"
-          animate="visible"
-          variants={{
-            hidden: {},
-            visible: {
-              transition: {
-                staggerChildren: 0.3,
-              },
-            },
-          }}
-        >
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.8 }}
-          >
-            At <span className="font-bold">Care4Poor</span>, we believe that every child deserves a fair
-            start in life — regardless of where they are born or the challenges they face. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique distinctio optio, tenetur quam eligendi iure repudiandae, reprehenderit sint dolorum molestiae illum quod quis tempora! Impedit vero non cumque fugit. Dignissimos, consequatur corrupti accusamus voluptatibus unde quos cumque asperiores saepe? Repellat aut harum asperiores quae consequuntur dicta architecto ipsa provident? Deserunt doloremque suscipit vitae. Quidem blanditiis facilis optio cum necessitatibus. Quod aperiam sapiente ut temporibus ab magni, ea laborum. Dolorem eveniet reprehenderit nisi optio libero rem culpa ea quidem deserunt est tenetur, aut iusto esse repellat? Consequatur consequuntur repudiandae pariatur aliquam, sunt odio possimus temporibus asperiores magnam beatae ut modi mollitia?
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam at consequuntur delectus quidem officiis minima, error, ab ea nam distinctio iusto aliquid? Reprehenderit quidem unde nemo officiis saepe in dicta ab, voluptate facilis molestias pariatur reiciendis, nobis autem quas veritatis rem. Deleniti fugit magnam natus odit suscipit quia nemo! Facere cum eaque excepturi! Nemo adipisci labore rem cumque placeat natus! Magni possimus, ducimus corrupti reiciendis placeat enim excepturi quisquam quo pariatur, suscipit soluta. Rerum nisi ad nesciunt fugit, autem dolor quasi odio ratione voluptate ullam, repudiandae maiores voluptatem, similique facilis! Libero labore exercitationem quae facilis possimus culpa ea consectetur provident tempore, doloribus et reiciendis aut dicta sit praesentium nobis quis laborum neque consequatur. Velit atque magnam deserunt quasi! Aliquid doloribus eos non temporibus quae distinctio eius dignissimos reprehenderit, repellendus nam illo rem amet perspiciatis eum, fugiat molestiae soluta dolor optio nisi commodi blanditiis porro iste illum quo. Et enim voluptatum alias impedit? Asperiores, sed necessitatibus! Aperiam deserunt vero sit, harum a maxime culpa possimus corporis, autem incidunt in consequatur id architecto molestias esse perspiciatis magnam nam vitae inventore reprehenderit fuga non velit blanditiis dignissimos! Voluptatum velit quae, deleniti laudantium unde accusamus, molestiae rerum culpa, delectus eaque deserunt animi molestias numquam.
-          </motion.p>
+          {/* Illustration */}
+          <div className="absolute top-6 right-6">
+            <img
+              src="https://img.icons8.com/3d-fluency/94/businesswoman.png"
+              alt="illustration"
+              className="w-16 h-16"
+            />
+          </div>
 
-          {/* <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.8 }}
-          >
-            Our mission is to empower underprivileged communities by focusing on
-            education, healthcare, and sustainable development programs.
-          </motion.p> */}
+          {/* Stats */}
+          <div className="mt-16 flex justify-between">
+            <div>
+              <h3 className="text-5xl font-bold text-gray-900">5+</h3>
+              <p className="text-gray-800 mt-1">Year Of Experience</p>
+            </div>
+            <div>
+              <h3 className="text-3xl font-bold text-gray-900">100+</h3>
+              <p className="text-gray-800 mt-1">Tournament Done</p>
+            </div>
+          </div>
+        </div>
 
-          {/* <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.8 }}
-          >
-            We work closely with volunteers and partners to create opportunities
-            that foster growth, hope, and lasting change.
-          </motion.p>
+        {/* Right Card */}
+        <div className="bg-[#d9e3e7] rounded-3xl shadow-md p-8 relative overflow-hidden flex">
+          {/* Text Section */}
+          <div className="w-2/3 pr-6">
+            <h2 className="text-2xl font-bold text-gray-900">
+              Who <span className="text-blue-800">We Are</span>
+            </h2>
+            <p className="text-gray-800 mt-3 text-sm leading-relaxed">
+              Score4Change is a youth-driven initiative committed to empowering
+              communities through the transformative power of sports and
+              education. We believe every goal scored on the field can lead to a
+              greater goal off the field — from building confidence and teamwork
+              to promoting equality, leadership, and social impact. Through
+              tournaments, workshops, and community engagement, we inspire young
+              minds to become changemakers and champions for a better tomorrow.
+              At Score4Change, we don’t just play to win — we play to make a
+              difference.
+            </p>
+          </div>
 
-          <motion.p
-            variants={{
-              hidden: { opacity: 0, y: 20 },
-              visible: { opacity: 1, y: 0 },
-            }}
-            transition={{ duration: 0.8 }}
-          >
-            Together, we are building a future where compassion, equality, and
-            justice guide our actions for a better tomorrow.
-          </motion.p> */}
-        </motion.div>
-      </motion.div>
+          {/* Image Section with Peeled Corner Effect */}
+          <div className="w-1/3 relative">
+            <div
+              className="absolute -right-8 top-0 h-full w-[180%] shadow-2xl"
+              style={{
+                clipPath: "circle(70% at 80% 50%)",
+              }}
+            >
+              <img
+                src="https://img.freepik.com/free-photo/football-soccer-match-grass-field_1150-14852.jpg"
+                alt="soccer"
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
 
-export default AboutUs;
+export default ImpactStatistics;
